@@ -1,65 +1,67 @@
+import { NavbarDemo } from "@/components/NavDemo";
+import { ProjectCard } from "@/components/ProjectCard";
+import { Button, MovingBorder } from "@/components/ui/moving-border";
+import { WobbleCard } from "@/components/ui/wobble-card";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+	return (
+		<div className="w-screen h-screen bg-white flex justify-center items-center ">
+			{/* container */}
+ {/* <MovingBorder duration={30000} rx="30%" ry="30%">
+		  <div
+			className={cn(
+			  "h-20 w-20 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.8)_10%,rgba(255,255,255,0.2)_80%,transparent_50%)] opacity-[0.8]",
+			 
+			)} />
+		</MovingBorder> */}
+			<div className="bg-black h-11/12 rounded-4xl px-5 overflow-y-scroll no-scrollbar partial-width shadow-[0_10px_40px_-10px_rgba(0,0,0,0.6)] ring-2 ring-white/45">
+			
+				<div className="sticky top-0 z-10">
+					<NavbarDemo />
+				</div>
+				{/* home section */}
+				<div className="home-section w-full h-full flex justify-between gap-4  mb-10">
+					{/* image */}
+					<div className="w-48 flex-1 border">
+						<WobbleCard containerClassName="w-1/2 aspect-3/4 mt-24">
+							<Image
+								src={"/port-pic.png"}
+								fill={true}
+								alt="profile picture"
+								className="object-left object-cover"
+							/>
+						</WobbleCard>
+					</div>
+
+					{/* intro text */}
+					<div className="flex-1 self-center p-5 min-h-36 border">
+						Welcome to my portfolio! I'm excited to share my work
+						and experiences with you. Here, you'll find a collection
+						
+						of my projects, skills, and achievements that showcase
+						my journey as a developer. Feel free to explore and
+						reach out if you'd like to connect!
+					</div>
+				</div>
+				{/* about section */}
+				<div className=" w-full h-full">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Consequuntur veniam minus accusamus. Voluptatibus, excepturi
+					voluptates neque, assumenda cumque ipsa esse itaque culpa
+					quam accusamus, magnam quasi natus cupiditate voluptate
+					amet! Illo ea delectus voluptas debitis quidem rerum
+					perferendis commodi nobis modi non cum aliquid quae
+					sapiente, quam praesentium quod. Sunt?
+				</div>
+				{/* project */}
+				<div className="flex gap-10 flex-wrap px-10">
+					<ProjectCard/>
+					<ProjectCard/>
+					<ProjectCard/>
+				</div>
+			</div>
+		</div>
+	);
 }
