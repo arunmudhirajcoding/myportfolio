@@ -4,8 +4,8 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
-import { data } from "@/constants/index"
-export function ProjectCard({project}) {
+import { data } from "@/constants/index";
+export function ProjectCard({ project }) {
 	const people = [
 		{
 			id: 1,
@@ -46,7 +46,7 @@ export function ProjectCard({project}) {
 	];
 	return (
 		<CardContainer className="inter-var">
-			<CardBody className="relative group/card  hover:shadow-2xl hover:shadow-emerald-500/10 bg-black border-white/20 w-auto sm:max-w-100 h-auto rounded-xl p-6 border  group">
+			<CardBody className="relative group/card  hover:shadow-2xl hover:shadow-emerald-500/10 bg-black border-white/20 w-auto sm:max-w-100 h-auto rounded-xl p-6 border group">
 				{/* title */}
 				<CardItem
 					translateZ="50"
@@ -73,11 +73,14 @@ export function ProjectCard({project}) {
 					/>
 				</CardItem>
 				<ul className="list-disc pl-5">
-				{project.features.map((feature, idx) => (
-					<li key={idx} className=" text-sm max-w-sm mt-2 text-neutral-300 group-hover:translate-z-20 transition delay-10 duration-300">
-						{feature}
-					</li>
-				))}
+					{project.features.map((feature, idx) => (
+						<li
+							key={idx}
+							className=" text-sm max-w-sm mt-2 text-neutral-300 group-hover:translate-z-20 transition delay-10 duration-300"
+						>
+							{feature}
+						</li>
+					))}
 				</ul>
 
 				<div className="flex flex-row items-center justify-start mt-5 w-full group-hover:translate-z-20 transition delay-10 duration-300">
