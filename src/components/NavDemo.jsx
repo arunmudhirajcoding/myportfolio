@@ -96,28 +96,24 @@ export function NavbarDemo() {
 							</a>
 						))}
 						<div className="flex w-full flex-col gap-4">
-							<a
+							<NavbarButton
+								as="a"
 								href="https://www.linkedin.com/in/arun-kumar-durgollu/"
-								target="_blank"
-								rel="noopener noreferrer"
+								variant="primary"
+								className="w-full flex items-center justify-center gap-2"
 							>
-								<NavbarButton
-									variant="primary"
-									className="w-full flex items-center justify-center gap-2"
-								>
-									<IconBrandLinkedin />
-									<span className="text-sm">LinkedIn</span>
-								</NavbarButton>
-							</a>
-							<a href="/Arun_Durugu_Resume.pdf" download>
-								<NavbarButton
-									variant="primary"
-									as="button"
-									className={"w-full"}
-								>
-									Download Resume
-								</NavbarButton>
-							</a>
+								<IconBrandLinkedin />
+								<span className="text-sm">LinkedIn</span>
+							</NavbarButton>
+							<NavbarButton
+								variant="primary"
+								as="a"
+								href="/Arun_Durugu_Resume.pdf"
+								download
+								className={"w-full"}
+							>
+								Download Resume
+							</NavbarButton>
 						</div>
 					</MobileNavMenu>
 				</MobileNav>

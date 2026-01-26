@@ -10,7 +10,7 @@ const HomeSection = () => {
 			className="home-section w-full min-h-[80vh] flex flex-col-reverse lg:flex-row-reverse gap-10 lg:gap-20 py-10 items-center justify-center lg:p-5 mb-10"
 		>
 			{/* Intro Text */}
-			<div className="flex-1 flex flex-col items-start gap-6 z-20 max-w-2xl ">
+			<div className="flex-1 flex flex-col items-start gap-6 z-20 max-w-2xl pl-5">
 				<div className="inline-flex items-center rounded-full border border-neutral-700 bg-neutral-900/50 px-3 text-sm text-neutral-300 backdrop-blur-sm">
 					<span className="flex h-2 w-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
 					Welcome to my portfolio

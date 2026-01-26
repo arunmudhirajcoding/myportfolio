@@ -88,7 +88,7 @@ export default function SignupFormDemo() {
 							Interested in working together or hiring me?
 						</p>
 					</div>
-					<div className="w-full grid lg:grid-cols-2 gap-8 items-center  ">
+					<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center  ">
 						<div className="w-full">
 							<form
 								className="my-8"
@@ -167,7 +167,7 @@ export default function SignupFormDemo() {
 							</form>
 							<div className="my-8 h-px w-full bg-linear-to-r from-transparent via-neutral-700 to-transparent" />
 							{/* social media buttons */}
-							<div className="flex space-x-4 justify-center items-center">
+							<div className="w-full px-3 flex space-x-4 justify-center items-center">
 								{socialMedia.map((l) => (
 									<button
 										key={l.link}
