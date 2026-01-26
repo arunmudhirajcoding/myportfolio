@@ -10,16 +10,25 @@ import {
 	MobileNavToggle,
 	MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
+import { IconBrandLinkedin } from "@tabler/icons-react";
 import { useState } from "react";
 export function NavbarDemo() {
 	const navItems = [
 		{
-			name: "Features",
-			link: "#features",
+			name: "About me",
+			link: "#about-me",
 		},
 		{
-			name: "Pricing",
-			link: "#pricing",
+			name: "Skills",
+			link: "#skills",
+		},
+		{
+			name: "Projects",
+			link: "#projects",
+		},
+		{
+			name: "Experience",
+			link: "#experience",
 		},
 		{
 			name: "Contact",
@@ -37,10 +46,26 @@ export function NavbarDemo() {
 					<NavbarLogo />
 					<NavItems items={navItems} />
 					<div className="flex items-center gap-4">
-						<NavbarButton variant="secondary">Login</NavbarButton>
-						<NavbarButton variant="primary">
-							Book a call
-						</NavbarButton>
+						<div>
+							<NavbarButton
+								variant="secondary"
+								className={"flex gap-2"}
+								as="a"
+								href="https://www.linkedin.com/in/arun-kumar-durgollu/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<IconBrandLinkedin className="h-5 w-5 text-neutral-300" />
+								<span className="text-sm text-neutral-300">
+									LinkedIn
+								</span>
+							</NavbarButton>
+						</div>
+						<a href="/Arun_Durugu_Resume.pdf" download>
+							<NavbarButton variant="primary" as="button">
+								Download Resume
+							</NavbarButton>
+						</a>
 					</div>
 				</NavBody>
 
@@ -71,20 +96,28 @@ export function NavbarDemo() {
 							</a>
 						))}
 						<div className="flex w-full flex-col gap-4">
-							<NavbarButton
-								onClick={() => setIsMobileMenuOpen(false)}
-								variant="primary"
-								className="w-full"
+							<a
+								href="https://www.linkedin.com/in/arun-kumar-durgollu/"
+								target="_blank"
+								rel="noopener noreferrer"
 							>
-								Login
-							</NavbarButton>
-							<NavbarButton
-								onClick={() => setIsMobileMenuOpen(false)}
-								variant="primary"
-								className="w-full"
-							>
-								Book a call
-							</NavbarButton>
+								<NavbarButton
+									variant="primary"
+									className="w-full flex items-center justify-center gap-2"
+								>
+									<IconBrandLinkedin />
+									<span className="text-sm">LinkedIn</span>
+								</NavbarButton>
+							</a>
+							<a href="/Arun_Durugu_Resume.pdf" download>
+								<NavbarButton
+									variant="primary"
+									as="button"
+									className={"w-full"}
+								>
+									Download Resume
+								</NavbarButton>
+							</a>
 						</div>
 					</MobileNavMenu>
 				</MobileNav>

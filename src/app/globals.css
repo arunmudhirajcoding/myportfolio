@@ -1,10 +1,23 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
 @utility no-scrollbar {
 	@apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --animate-shimmer: shimmer 2s linear infinite;
+
+  @keyframes shimmer {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
 }
 
 /* ================================
@@ -100,7 +113,6 @@
    BASE STYLES
 ================================ */
 
-
 /* ================================
    UTILITIES
 ================================ */
@@ -108,6 +120,69 @@
 	width: calc(100% - 8rem);
 }
 
-.heading{
-	@apply text-4xl font-extrabold
+body {
+	background: #000;
+	font-family: system-ui, sans-serif;
+}
+
+/* Wrapper handles the glow */
+.textarea-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+/* Glow layer */
+.textarea-wrapper::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 14px;
+	background: radial-gradient(
+		120px at var(--x, 50%) var(--y, 50%),
+		rgba(59, 130, 246, 0.35),
+		transparent 60%
+	);
+	opacity: 0;
+	transition: opacity 0.25s ease;
+	pointer-events: none;
+}
+
+/* Show glow on hover */
+.textarea-wrapper:hover::before {
+	opacity: 1;
+}
+
+/* Textarea styling */
+.glow-textarea {
+	width: 100%;
+	min-height: 90px;
+	resize: vertical;
+
+	padding: 14px 16px;
+	border-radius: 14px;
+
+	background: #1f1f1f;
+	color: #d1d5db;
+
+	border: 1px solid #2f2f2f;
+	outline: none;
+
+	font-size: 16px;
+	font-family: inherit;
+
+	position: relative;
+	z-index: 1;
+
+	transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Focus state */
+.glow-textarea:focus {
+	border-color: #3b82f6;
+	box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.6);
+}
+
+/* Placeholder */
+.glow-textarea::placeholder {
+	color: #9ca3af;
 }

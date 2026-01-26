@@ -1,6 +1,7 @@
 import { Varela_Round } from "next/font/google";
 import "./globals.css";
-
+import { Toaster } from "@/components/ui/sonner";
+// import { Toaster } from "sonner";
 const Varela = Varela_Round({
   weight: "400",
   subsets: ["latin"],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${Varela.className} antialiased text-white`}
       >
+         <Toaster/>
         {children}
       </body>
     </html>
