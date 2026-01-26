@@ -84,55 +84,49 @@ function IconContainer({ mouseX, name, icon, desc }) {
 	const [hovered, setHovered] = useState(false);
 
 	return (
-		<a href={`${name}`}>
-			<motion.div
-				ref={ref}
-				style={{ width, height }}
-				onMouseEnter={() => setHovered(true)}
-				onMouseLeave={() => setHovered(false)}
-				className="relative flex aspect-square items-center justify-center rounded-full bg-neutral-800"
+		<motion.div
+			ref={ref}
+			style={{ width, height }}
+			onMouseEnter={() => setHovered(true)}
+			onMouseLeave={() => setHovered(false)}
+			className="relative flex aspect-square items-center justify-center rounded-full bg-neutral-800"
+		>
+			<AnimatePresence>
+				{hovered && (
+					<motion.div
+						initial={{ opacity: 0, y: 20, scale: 0.6 }}
+						animate={{
+							opacity: 1,
+							y: 0,
+							scale: 1,
+							transition: {
+								type: "spring",
+								stiffness: 260,
+								damping: 10,
+							},
+						}}
+						exit={{ opacity: 0, y: 20, scale: 0.6 }}
+						style={{
+							whiteSpace: "nowrap",
+						}}
+						className="absolute -top-16 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center justify-center rounded-md bg-black px-4 py-2 text-xs shadow-xl"
+						key={name}
+					>
+						<div className="absolute inset-x-10 -bottom-px z-30 h-px w-[20%] bg-linear-to-r from-transparent via-emerald-500 to-transparent" />
+						<div className="absolute -bottom-px left-10 z-30 h-px w-[40%] bg-linear-to-r from-transparent via-sky-500 to-transparent" />
+						<div className="relative z-30 text-base font-bold text-white">
+							{name}
+						</div>
+						<div className="text-xs text-white">{desc}</div>
+					</motion.div>
+				)}
+			</AnimatePresence>
+			<motion.span
+				style={{ width: widthIcon, height: heightIcon }}
+				className="flex items-center justify-center"
 			>
-				<AnimatePresence>
-					{hovered && (
-						<motion.div
-							initial={{ opacity: 0, y: 20, scale: 0.6 }}
-							animate={{
-								opacity: 1,
-								y: 0,
-								scale: 1,
-								transition: {
-									type: "spring",
-									stiffness: 260,
-									damping: 10,
-								},
-							}}
-							exit={{ opacity: 0, y: 20, scale: 0.6 }}
-							style={{
-								
-								
-								whiteSpace: "nowrap",
-							}}
-							className="absolute -top-16 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center justify-center rounded-md bg-black px-4 py-2 text-xs shadow-xl"
-							key={name}
-						>
-							<div className="absolute inset-x-10 -bottom-px z-30 h-px w-[20%] bg-linear-to-r from-transparent via-emerald-500 to-transparent" />
-							<div className="absolute -bottom-px left-10 z-30 h-px w-[40%] bg-linear-to-r from-transparent via-sky-500 to-transparent" />
-							<div className="relative z-30 text-base font-bold text-white">
-								{name}
-							</div>
-							<div className="text-xs text-white">
-								{desc}
-							</div>
-						</motion.div>
-					)}
-				</AnimatePresence>
-				<motion.span
-					style={{ width: widthIcon, height: heightIcon }}
-					className="flex items-center justify-center"
-				>
-					{icon}
-				</motion.span>
-			</motion.div>
-		</a>
+				{icon}
+			</motion.span>
+		</motion.div>
 	);
 }

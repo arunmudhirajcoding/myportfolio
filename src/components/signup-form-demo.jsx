@@ -80,7 +80,7 @@ export default function SignupFormDemo() {
 			{showThankYou ? (
 				<ThankYou />
 			) : (
-				<div className="  flex flex-col justify-center items-center">
+				<div className="w-full flex flex-col justify-center items-center">
 					<div>
 						<Heading text="Let's Connect" />
 
@@ -88,7 +88,7 @@ export default function SignupFormDemo() {
 							Interested in working together or hiring me?
 						</p>
 					</div>
-					<div className="w-full lg:w-9/12 grid lg:grid-cols-2 gap-8 items-center  ">
+					<div className="w-full grid lg:grid-cols-2 gap-8 items-center  ">
 						<div className="w-full">
 							<form
 								className="my-8"
