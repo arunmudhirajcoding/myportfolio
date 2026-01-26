@@ -36,10 +36,11 @@ const HomeSection = () => {
 
 				<div className="flex flex-wrap gap-4 mt-2">
 					<a
-						href="#projects"
-						className="px-8 py-3 rounded-lg bg-white text-black font-bold hover:bg-neutral-200 transition-transform hover:-translate-y-1"
+						href="/Arun_Durugu_Resume.pdf"
+						className="px-14 py-3 rounded-lg bg-white text-black font-bold hover:bg-neutral-200 transition-transform hover:-translate-y-1"
+						download
 					>
-						View Projects
+						Resume
 					</a>
 					<a
 						href="https://github.com/arunmudhirajcoding"
@@ -47,7 +48,7 @@ const HomeSection = () => {
 						rel="noopener noreferrer"
 						className="px-8 py-3 rounded-lg border border-neutral-700 text-white font-medium hover:bg-neutral-800 transition-transform hover:-translate-y-1 flex gap-2"
 					>
-						<IconBrandGithub/>
+						<IconBrandGithub />
 						GitHub
 					</a>
 					<a

@@ -88,7 +88,7 @@ export default function SignupFormDemo() {
 							Interested in working together or hiring me?
 						</p>
 					</div>
-					<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center  ">
+					<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-5 md:px-20 ">
 						<div className="w-full">
 							<form
 								className="my-8"
