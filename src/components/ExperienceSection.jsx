@@ -1,5 +1,6 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import Image from "next/image";
 export function ExperienceSection() {
 	const data = [
 		{
@@ -33,29 +34,30 @@ export function ExperienceSection() {
 					</div>
 
 					<div className="grid grid-cols-2 gap-4">
-						<img
+						<Image
 							src="https://assets.aceternity.com/templates/startup-1.webp"
 							alt="startup template"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+							unoptimized
 						/>
-						<img
-							src="journey/20252.png"
+						<Image
+							src="/journey/20252.png"
 							alt="startup template"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 						/>
-						<img
-							src="projects/TEKYTALK.png"
+						<Image
+							src="/projects/TEKYTALK.png"
 							alt="startup template"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 						/>
-						<img
-							src="journey/20251.png"
+						<Image
+							src="/journey/20251.png"
 							alt="startup template"
 							width={500}
 							height={500}
@@ -67,7 +69,7 @@ export function ExperienceSection() {
 		},
 
 		{
-			title: "2024",
+			title: "2024-explore",
 			content: (
 				<div>
 					<p className="mb-4 text-xs font-normal md:text-lg md:font-bold text-neutral-200">
@@ -103,29 +105,29 @@ export function ExperienceSection() {
 					</div>
 
 					<div className="grid grid-cols-2 gap-4">
-						<img
-							src="journey/20244.png"
+						<Image
+							src="/journey/20244.png"
 							alt="hero template"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover object-[50%_20%] shadow-[...] md:h-44 lg:h-60"
 						/>
-						<img
-							src="journey/20243.jpg"
+						<Image
+							src="/journey/20243.jpg"
 							alt="feature template"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 						/>
-						<img
-							src="journey/20242.jpg"
+						<Image
+							src="/journey/20242.jpg"
 							alt="bento template"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover object-[center_top] shadow-[...] md:h-44 lg:h-60"
 						/>
-						<img
-							src="journey/20241.png"
+						<Image
+							src="/journey/20241.png"
 							alt="cards template"
 							width={500}
 							height={500}
@@ -137,7 +139,7 @@ export function ExperienceSection() {
 		},
 
 		{
-			title: "2023",
+			title: "2023-learning",
 			content: (
 				<div key="2023-content">
 					<p className="mb-4 text-xs font-normal md:text-lg md:font-bold text-neutral-200">
@@ -163,17 +165,17 @@ export function ExperienceSection() {
 						</div>
 					</div>
 					<div className="grid grid-cols-2 gap-4">
-						<img
+						<Image
 							key="learning1"
-							src="journey/learning1.jpg"
+							src="/journey/learning1.jpg"
 							alt="hero template"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 						/>
-						<img
+						<Image
 							key="flex"
-							src="journey/flex.jpg"
+							src="/journey/flex.jpg"
 							alt="feature template"
 							width={500}
 							height={500}

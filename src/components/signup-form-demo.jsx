@@ -17,6 +17,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema } from "@/lib/validations/contactSchema";
 import { toast } from "sonner";
 import Heading from "./Heading";
+import Image from "next/image";
 
 const SplineScene = dynamic(() => import("./SplineScene"), {
 	ssr: false,
@@ -190,11 +191,12 @@ export default function SignupFormDemo() {
 							</div>
 						</div>
 						<div className="hidden lg:block h-full p-10">
-							<img
-								src="logos/undraw_connection_ts3f.svg"
+							<Image
+								src="/logos/undraw_connection_ts3f.svg"
 								alt="connection"
-								sizes="(max-width: 768px) 100vw, 50vw"
-								className=" rounded-lg object-cover shadow-[...]  "
+								width={500}
+								height={400}
+								className="rounded-lg object-cover shadow-[...]"
 							/>
 						</div>
 					</div>
@@ -208,8 +210,8 @@ const ThankYou = () => {
 		<section className="flex w-full items-center justify-center bg-black px-6">
 			<div className="flex flex-row-reverse self-baseline text-center max-w-4/5">
 				<div className="hidden lg:block h-full p-10 flex-1">
-					<img
-						src="logos/undraw_handshake-deal_nwk6.svg"
+					<Image
+						src="/logos/undraw_handshake-deal_nwk6.svg"
 						alt="connection"
 						width={500}
 						height={500}
