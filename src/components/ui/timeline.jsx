@@ -29,7 +29,7 @@ export const Timeline = ({ data }) => {
 			ref={containerRef}
 		>
 			<div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
-				<Heading text={"My Journey"} />
+				<Heading text={"My Experience"} />
 				<p className="text-neutral-300 text-lg text-center max-w-lg mx-auto">
 					My journey as a developer is shaped by curiosity,experimentation, and real-world experience. Here’s how it has evolved over time.
 				</p>

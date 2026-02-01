@@ -35,7 +35,7 @@ export function ExperienceSection() {
 
 					<div className="grid grid-cols-2 gap-4">
 						<Image
-							src="https://assets.aceternity.com/templates/startup-1.webp"
+							src="/journey/mentis.jpg"
 							alt="startup template"
 							width={500}
 							height={500}
