@@ -40,7 +40,7 @@ export function NavbarDemo() {
 	return (
 		<div className="w-full">
 			{/* Navbar */}
-			<Navbar className={"bg-black"}>
+			<Navbar className={"bg-black relative"}>
 				{/* Desktop Navigation */}
 				<NavBody>
 					<NavbarLogo />
