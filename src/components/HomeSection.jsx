@@ -36,7 +36,7 @@ const HomeSection = () => {
 
 				<div className="flex flex-wrap gap-4 mt-2">
 					<a
-						href="/Arun_Durugu_Resume.pdf"
+						href="/Arun-kumar-durgollu-resume.pdf"
 						className="px-14 py-3 rounded-lg bg-white text-black font-bold hover:bg-neutral-200 transition-transform hover:-translate-y-1"
 						download
 					>

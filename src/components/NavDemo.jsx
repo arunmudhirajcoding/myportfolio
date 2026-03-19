@@ -61,7 +61,7 @@ export function NavbarDemo() {
 								</span>
 							</NavbarButton>
 						</div>
-						<a href="/Arun_Durugu_Resume.pdf" download>
+						<a href="/Arun-kumar-durgollu-resume.pdf" download>
 							<NavbarButton variant="primary" as="button">
 								Download Resume
 							</NavbarButton>
@@ -108,7 +108,7 @@ export function NavbarDemo() {
 							<NavbarButton
 								variant="primary"
 								as="a"
-								href="/Arun_Durugu_Resume.pdf"
+								href="/Arun-kumar-durgollu-resume.pdf"
 								download
 								className={"w-full"}
 							>
