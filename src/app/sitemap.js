@@ -1,10 +1,8 @@
 export default function sitemap() {
-  const baseUrl = "https://arun-kumar-durgollu.vercel.app";
-
   return [
     {
-      url: baseUrl,
-      lastModified: new Date(),
+      url: "https://arun-kumar-durgollu.vercel.app/",
+      lastModified: new Date().toISOString(),
       changeFrequency: "weekly",
       priority: 1,
     },
