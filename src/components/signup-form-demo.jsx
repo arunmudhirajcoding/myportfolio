@@ -219,11 +219,11 @@ const ThankYou = () => {
 					/>
 				</div>
 				<div className="flex-1 p-4">
-					<h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+					<h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
 						THANKS FOR
 						<br />
 						<span className="text-cyan-400">REACHING OUT.</span>
-					</h1>
+					</h2>
 
 					<p className="mt-6 text-lg md:text-xl text-neutral-400">
 						Looking forward to connecting with you.

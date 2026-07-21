@@ -36,29 +36,29 @@ export function ExperienceSection() {
 					<div className="grid grid-cols-2 gap-4">
 						<Image
 							src="/journey/mentis.jpg"
-							alt="startup template"
+							alt="Mentis Hackathon"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 							unoptimized
 						/>
 						<Image
-							src="/journey/20252.png"
-							alt="startup template"
+							src="/journey/StartupProfile.png"
+							alt="Startup Profile"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 						/>
 						<Image
 							src="/projects/TEKYTALK.png"
-							alt="startup template"
+							alt="TEKYTALK Project"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 						/>
 						<Image
-							src="/journey/20251.png"
-							alt="startup template"
+							src="/journey/Esummit.png"
+							alt="Esummit Program"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover object-bottom shadow-[...] md:h-44 lg:h-60"
@@ -106,29 +106,29 @@ export function ExperienceSection() {
 
 					<div className="grid grid-cols-2 gap-4">
 						<Image
-							src="/journey/20244.png"
-							alt="hero template"
+							src="/journey/NITW.png"
+							alt="NITW Hackathon"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover object-[50%_20%] shadow-[...] md:h-44 lg:h-60"
 						/>
 						<Image
-							src="/journey/20243.jpg"
-							alt="feature template"
+							src="/journey/NITWHACKTHON.jpg"
+							alt="NITW Hackathon"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 						/>
 						<Image
-							src="/journey/20242.jpg"
-							alt="bento template"
+							src="/journey/NASASpace.jpg"
+							alt="NASA Space Apps Challenge in Global Hackathon"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover object-[center_top] shadow-[...] md:h-44 lg:h-60"
 						/>
 						<Image
-							src="/journey/20241.png"
-							alt="cards template"
+							src="/journey/NASAspaceApps.png"
+							alt="NASA Space Apps Challenge in Viba"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover object-[20%_60%] shadow-[...] md:h-44 lg:h-60"
@@ -167,16 +167,16 @@ export function ExperienceSection() {
 					<div className="grid grid-cols-2 gap-4">
 						<Image
 							key="learning1"
-							src="/journey/learning1.jpg"
-							alt="hero template"
+							src="/journey/EXPO.jpg"
+							alt="Expo Event"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
 						/>
 						<Image
 							key="flex"
-							src="/journey/flex.jpg"
-							alt="feature template"
+							src="/journey/LearningWeb.jpg"
+							alt="Learning web development"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"

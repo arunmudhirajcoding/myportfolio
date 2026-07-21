@@ -11,14 +11,14 @@ const AboutSection = () => {
 				{/* image */}
 				<div className="w-full lg:w-auto p-6 flex flex-row items-center justify-center lg:block gap-6 lg:gap-0">
 					<Image
-						src={"/profile-pic2.png"}
+						src={"/AboutProfile.png"}
 						width={500}
 						height={500}
-						alt="profile picture"
+						alt="About Me Profile pic"
 						className="w-32 h-32 sm:w-40 sm:h-40 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-left object-cover rounded-full border-white/50 shadow-xl/40 shadow-white"
 					/>
-					<div className="text-2xl sm:text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold block lg:hidden w-auto">
-						Hey!,I’m Arun Durgollu <br />
+					<div className="text-2xl sm:text-3xl bg-clip-text text-transparent bg-linear-to-b from-neutral-200 to-neutral-600 font-sans font-bold block lg:hidden w-auto">
+						Hey!,I’m Arun Kumar Durgollu <br />
 						<span className="text-lg sm:text-xl text-neutral-400 font-medium">
 							MERN Stack Developer
 						</span>
@@ -27,8 +27,8 @@ const AboutSection = () => {
 				{/* intro text */}
 				<div className="lg:flex-1 flex flex-col gap-6 justify-center lg:h-auto px-4 lg:px-0">
 					<div className="text-2xl text-white leading-tight font-medium ">
-						<div className="text-4xl xl:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold mb-3 hidden lg:block">
-							Hey!,I’m Arun Durgollu
+						<div className="text-4xl xl:text-5xl bg-clip-text text-transparent bg-linear-to-b from-neutral-200 to-neutral-600 font-sans font-bold mb-3 hidden lg:block">
+							Hey!,I’m Arun Kumar Durgollu
 						</div>
 						<span className="hidden lg:inline-block">
 							MERN Stack Developer,

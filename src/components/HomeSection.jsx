@@ -16,18 +16,18 @@ const HomeSection = () => {
 					Welcome to my portfolio
 				</div>
 
-				<h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight tracking-tight">
+				<h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight tracking-tight">
 					Building <br />
 					<span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient-x">
 						Intelligent
 					</span>{" "}
 					Web Systems
-				</h1>
+				</h2>
 
 				<p className="text-lg text-neutral-400 leading-relaxed max-w-lg">
 					Hey, I'm{" "}
 					<span className="text-white font-semibold">
-						Arun Durgollu
+						Arun Kumar Durgollu
 					</span>
 					. A Student MERN Stack Developer & Internship Seeker,
 					developing AI-powered web apps with Next.js, LangChain &
@@ -71,9 +71,9 @@ const HomeSection = () => {
 				<WobbleCard containerClassName="w-10/12 h-full bg-neutral-900/10 border-none shadow-2xl">
 					<div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 to-purple-500/10 rounded-2xl mix-blend-overlay z-0" />
 					<Image
-						src={"/port-pic.png"}
+						src={"/Profile.png"}
 						fill={true}
-						alt="Arun Durgollu"
+						alt="Arun Kumar Durgollu"
 						className="object-cover object-center rounded-2xl z-0"
 						priority
 					/>

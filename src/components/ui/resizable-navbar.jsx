@@ -9,7 +9,6 @@ import {
 } from "motion/react";
 
 import React, { useRef, useState } from "react";
-import Heading from "../Heading";
 
 export const Navbar = ({ children, className }) => {
 	const ref = useRef(null);

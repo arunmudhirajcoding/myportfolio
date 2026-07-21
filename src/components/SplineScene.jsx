@@ -10,7 +10,7 @@ const Spline = dynamic(
 
 export default function SplineScene() {
     return (
-        <div className="w-full h-[300px] md:h-[400px] relative">
+        <div className="w-full h-75 md:h-100 relative">
             <Spline scene="https://prod.spline.design/YOUR-REMIX-ID/scene.splinecode" />
             <div className="bg-black absolute bottom-3 h-6"></div>
         </div>
