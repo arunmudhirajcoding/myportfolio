@@ -22,6 +22,9 @@ import {
 	SiSentry,
 	SiChainlink,
 } from "react-icons/si";
+import EC2Icon from "react-aws-icons/dist/aws/logo/EC2";
+import BucketWithObjectsIcon from "react-aws-icons/dist/aws/storage/BucketWithObjects";
+import LambdaFunctionIcon from "react-aws-icons/dist/aws/compute/LambdaFunction";
 
 import { FaBrain, FaCogs, FaLink, FaProjectDiagram, FaServer, FaShieldAlt } from "react-icons/fa";
 
@@ -184,17 +187,52 @@ const skills = [
 				desc: "Code hosting and collaboration",
 			},
 			{
-				icon: <SiDocker className="h-full w-full text-neutral-300" />,
-				name: "Docker",
-				desc: "Containerization and deployment",
-			},
-			{
 				icon: <SiSentry className="h-full w-full text-neutral-300" />,
 				name: "Sentry",
 				desc: "Error tracking and monitoring",
 			},
 		],
 	},
+
+{
+	group: "Cloud & DevOps",
+	items: [
+		{
+			icon: (
+				<BucketWithObjectsIcon
+					size={40}
+					className="h-full w-full"
+				/>
+			),
+			name: "AWS S3",
+			desc: "Cloud storage and object management",
+		},
+		{
+			icon: (
+				<LambdaFunctionIcon
+					size={40}
+					className="h-full w-full"
+				/>
+			),
+			name: "AWS Lambda",
+			desc: "Serverless application functions",
+		},
+		{
+			icon: (
+				<SiDocker className="h-full w-full text-neutral-300" />
+			),
+			name: "Docker",
+			desc: "Containerization and deployment",
+		},
+		{
+			icon: (
+				<FaCogs className="h-full w-full text-neutral-300" />
+			),
+			name: "CI/CD",
+			desc: "Continuous integration and deployment",
+		},
+	],
+},
 ];
 
 export default function SkillSection() {
@@ -233,7 +271,7 @@ export default function SkillSection() {
 				<span className="text-gray-300 font-bold">
 					Currently learning
 				</span>{" "}
-				<div>Cloud Computing & AI/ML</div>
+				<div>Core Artificial Intelligence and Machine Learning concepts</div>
 			</div>
 		</section>
 	);

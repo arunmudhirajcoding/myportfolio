@@ -1,77 +1,5 @@
 export const data = [
-	{
-		id: "ak-meet-zoom-clone",
-		title: "AK Meet",
-		shortDesc:
-			"Real-time video conferencing platform with video calls, chat, and meeting history.",
-
-		coverImage: "/projects/AK-meet.png", // replace with actual image path
-
-		overview: {
-			problem:
-				"Remote communication platforms require reliable real-time video, chat, and meeting management with low latency.",
-			solution:
-				"AK Meet replicates core Zoom functionality using WebRTC and Socket.io to enable secure, real-time video meetings and messaging.",
-			targetUsers:
-				"Remote teams, students, and individuals needing real-time video communication.",
-		},
-
-		features: [
-			"Real-time video calls using WebRTC",
-			"Live chat & signaling with Socket.io",
-			"Auth users with meeting history tracking",
-		],
-
-		techStack: [
-			{
-				id: 1,
-				name: "React",
-				role: "Frontend framework",
-				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-			},
-			{
-				id: 2,
-				name: "Node.js",
-				role: "Backend runtime",
-				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-			},
-			{
-				id: 3,
-				name: "Express.js",
-				role: "Backend framework",
-				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-			},
-			{
-				id: 4,
-				name: "MongoDB",
-				role: "Database",
-				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-			},
-			{
-				id: 5,
-				name: "Socket.io",
-				role: "Real-time communication",
-				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
-			},
-			{
-				id: 6,
-				name: "WebRTC",
-				role: "Peer-to-peer video streaming",
-				icon: "https://w7.pngwing.com/pngs/430/932/png-transparent-webrtc-full-logo-tech-companies.png",
-			},
-			{
-				id: 7,
-				name: "Material UI",
-				role: "UI components",
-				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
-			},
-		],
-
-		links: {
-			github: "https://github.com/arunmudhirajcoding/AK-Meet", // add repo link if public
-			live: "https://ak-meet.vercel.app/", // add live link if deployed
-		},
-	},
+	
 	{
 		id: "ak-resorts-booking-platform",
 		title: "AK Resorts",
@@ -217,6 +145,79 @@ export const data = [
 			github: "https://github.com/arunmudhirajcoding/ai_saas",
 			live: "https://ai-saas-sand-one.vercel.app/",
 			caseStudy: "",
+		},
+	},
+	{
+		id: "ak-meet-zoom-clone",
+		title: "AK Meet",
+		shortDesc:
+			"Real-time video conferencing platform with video calls, chat, and meeting history.",
+
+		coverImage: "/projects/AK-meet.png", // replace with actual image path
+
+		overview: {
+			problem:
+				"Remote communication platforms require reliable real-time video, chat, and meeting management with low latency.",
+			solution:
+				"AK Meet replicates core Zoom functionality using WebRTC and Socket.io to enable secure, real-time video meetings and messaging.",
+			targetUsers:
+				"Remote teams, students, and individuals needing real-time video communication.",
+		},
+
+		features: [
+			"Real-time video calls using WebRTC",
+			"Live chat & signaling with Socket.io",
+			"Auth users with meeting history tracking",
+		],
+
+		techStack: [
+			{
+				id: 1,
+				name: "React",
+				role: "Frontend framework",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+			},
+			{
+				id: 2,
+				name: "Node.js",
+				role: "Backend runtime",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+			},
+			{
+				id: 3,
+				name: "Express.js",
+				role: "Backend framework",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+			},
+			{
+				id: 4,
+				name: "MongoDB",
+				role: "Database",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+			},
+			{
+				id: 5,
+				name: "Socket.io",
+				role: "Real-time communication",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+			},
+			{
+				id: 6,
+				name: "WebRTC",
+				role: "Peer-to-peer video streaming",
+				icon: "https://w7.pngwing.com/pngs/430/932/png-transparent-webrtc-full-logo-tech-companies.png",
+			},
+			{
+				id: 7,
+				name: "Material UI",
+				role: "UI components",
+				icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+			},
+		],
+
+		links: {
+			github: "https://github.com/arunmudhirajcoding/AK-Meet", // add repo link if public
+			live: "https://ak-meet.vercel.app/", // add live link if deployed
 		},
 	},
 ];
