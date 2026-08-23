@@ -71,7 +71,7 @@ const HomeSection = () => {
 				<WobbleCard containerClassName="w-10/12 h-full bg-neutral-900/10 border-none shadow-2xl">
 					<div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 to-purple-500/10 rounded-2xl mix-blend-overlay z-0" />
 					<Image
-						src={"/Profile.png"}
+						src={"/Profile-pic.png"}
 						fill={true}
 						alt="Arun Kumar Durgollu"
 						className="object-cover object-center rounded-2xl z-0"

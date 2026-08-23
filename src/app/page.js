@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import CertificatesSection from "@/components/CertificatesSection";
 import ContactSection from "@/components/ContactSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import Footer from "@/components/Footer";
@@ -43,11 +44,14 @@ export default function Home() {
 				{/* experience section */}
 				<section id="experience">
 					<ExperienceSection />
-				<section id="contact">
-				</section>	
+				</section>
+				<section id="certificates">
+					<CertificatesSection />
 				</section>
 				{/* contact section */}
+				<section id="contact">
 					<ContactSection />
+				</section>	
 				{/* footer */}
 				<Footer />
 			</div>

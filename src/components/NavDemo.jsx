@@ -31,6 +31,10 @@ export function NavbarDemo() {
 			link: "#experience",
 		},
 		{
+			name: "Certificates",
+			link: "#certificates",
+		},
+		{
 			name: "Contact",
 			link: "#contact",
 		},
