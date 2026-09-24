@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://arun-kumar-durgollu.vercel.app/sitemap.xml",
+    sitemap: "https://arunkumardurgollu.me/sitemap.xml",
   };
 }

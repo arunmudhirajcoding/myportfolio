@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: "https://arun-kumar-durgollu.vercel.app/",
+      url: "https://arunkumardurgollu.me/",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,

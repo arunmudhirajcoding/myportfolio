@@ -205,7 +205,7 @@ This is a personal portfolio, but feel free to:
 
 ## 📞 Connect With Me
 
-- **Portfolio**: [https://arun-kumar-durgollu.vercel.app/](https://arun-kumar-durgollu.vercel.app/)
+- **Portfolio**: [https://arunkumardurgollu.me](https://arunkumardurgollu.me)
 - **GitHub**: [@arunmudhirajcoding](https://github.com/arunmudhirajcoding)
 - **Email**: duruguarun@gmail.com
 - **Location**: Warangal, India

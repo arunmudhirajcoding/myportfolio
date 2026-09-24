@@ -5,14 +5,13 @@ import {
 	SiNextdotjs,
 	SiJavascript,
 	SiHtml5,
-	SiCss3,
+	SiCss,
 	SiTailwindcss,
 	SiBootstrap,
 	SiNodedotjs,
 	SiExpress,
 	SiStripe,
 	SiPython,
-	SiOpenai,
 	SiMongodb,
 	SiPostgresql,
 	SiSupabase,
@@ -20,13 +19,13 @@ import {
 	SiGithub,
 	SiGit,
 	SiSentry,
-	SiChainlink,
+	SiLangchaincorporate,
+	SiLanggraph 
 } from "react-icons/si";
-import EC2Icon from "react-aws-icons/dist/aws/logo/EC2";
 import BucketWithObjectsIcon from "react-aws-icons/dist/aws/storage/BucketWithObjects";
 import LambdaFunctionIcon from "react-aws-icons/dist/aws/compute/LambdaFunction";
-
-import { FaBrain, FaCogs, FaLink, FaProjectDiagram, FaServer, FaShieldAlt } from "react-icons/fa";
+import { BsOpenai } from "react-icons/bs";
+import { FaBrain, FaCogs, FaServer, FaShieldAlt } from "react-icons/fa";
 
 import { FloatingDock } from "./ui/floating-dock";
 import Heading from "./Heading";
@@ -59,7 +58,7 @@ const skills = [
 				desc: "Semantic and accessible markup",
 			},
 			{
-				icon: <SiCss3 className="h-full w-full text-neutral-300" />,
+				icon: <SiCss className="h-full w-full text-neutral-300" />,
 				name: "CSS3",
 				desc: "Responsive layouts and styling",
 			},
@@ -116,7 +115,7 @@ const skills = [
 	},
 
 	{
-		group: "AI / Machine Learning",
+		group: "Agentic AI And AI Tools",
 		items: [
 			{
 				icon: <SiPython className="h-full w-full text-neutral-300" />,
@@ -129,20 +128,20 @@ const skills = [
 				desc: "Core ML concepts and workflows",
 			},
 			{
-				icon: <SiOpenai className="h-full w-full text-neutral-300" />,
+				icon: <BsOpenai  className="h-full w-full text-neutral-300" />,
 				name: "OpenAI API",
 				desc: "AI-powered features and automation",
 			},
 			{
 				icon: (
-					<FaLink className="h-full w-full text-neutral-300" />
+					<SiLangchaincorporate  className="h-full w-full text-neutral-300" />
 				),
 				name: "LangChain",
 				desc: "Building agentic AI workflows",
 			},
 			{
 				icon: (
-					<FaProjectDiagram className="h-full w-full text-neutral-300" />
+					<SiLanggraph className="h-full w-full text-neutral-300" />
 				),
 				name: "LangGraph",
 				desc: "Multi-agent orchestration and control",

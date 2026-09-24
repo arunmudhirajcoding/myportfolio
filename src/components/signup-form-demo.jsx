@@ -19,12 +19,6 @@ import { toast } from "sonner";
 import Heading from "./Heading";
 import Image from "next/image";
 
-const SplineScene = dynamic(() => import("./SplineScene"), {
-	ssr: false,
-	loading: () => (
-		<div className="h-75 bg-neutral-900 animate-pulse rounded-xl" />
-	),
-});
 export default function SignupFormDemo() {
 	const socialMedia = [
 		{

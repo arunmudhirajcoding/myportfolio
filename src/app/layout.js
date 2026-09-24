@@ -8,16 +8,15 @@ const Varela = Varela_Round({
 });
 
 export const metadata = {
-	metadataBase: new URL("https://arun-kumar-durgollu.vercel.app"),
+	metadataBase: new URL("https://arunkumardurgollu.me"),
 
 	title: {
 		default:
-			"Arun Kumar Durgollu | MERN Stack Developer | Next.js Portfolio | Full Stack & AI Developer",
+			"Arun Kumar Durgollu | MERN Stack Developer | Full Stack & AI Developer",
 		template: "%s | Arun Kumar Durgollu",
 	},
 
-	description:
-		"Arun Kumar Durgollu is a MERN Stack Developer and Computer Science student passionate about building scalable full-stack web applications using React, Next.js, Node.js, Express.js, MongoDB, and modern AI technologies.",
+	description: "Arun Kumar Durgollu is a Full Stack and AI Developer building modern web applications and AI-powered solutions with React, Next.js, Node.js, MongoDB and modern AI technologies: Langchain, Langgraph.",
 
 	applicationName: "Arun Kumar Portfolio",
 	alternates: {
@@ -27,7 +26,7 @@ export const metadata = {
 	authors: [
 		{
 			name: "Arun Kumar Durgollu",
-			url: "https://arun-kumar-durgollu.vercel.app",
+			url: "https://arunkumardurgollu.me",
 		},
 	],
 
