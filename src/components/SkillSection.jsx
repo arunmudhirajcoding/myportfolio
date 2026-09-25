@@ -34,44 +34,44 @@ const skills = [
 		group: "Core Web Development",
 		items: [
 			{
-				icon: <SiReact className="h-full w-full text-neutral-300" />,
+				icon: <SiReact aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "React",
 				desc: "Building interactive UI components",
 			},
 			{
 				icon: (
-					<SiNextdotjs className="h-full w-full text-neutral-300" />
+					<SiNextdotjs aria-hidden="true" className="h-full w-full text-neutral-300" />
 				),
 				name: "Next.js",
 				desc: "Full-stack React framework with SEO",
 			},
 			{
 				icon: (
-					<SiJavascript className="h-full w-full text-neutral-300" />
+					<SiJavascript aria-hidden="true" className="h-full w-full text-neutral-300" />
 				),
 				name: "JavaScript",
 				desc: "Core application logic (ES6+)",
 			},
 			{
-				icon: <SiHtml5 className="h-full w-full text-neutral-300" />,
+				icon: <SiHtml5 aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "HTML5",
 				desc: "Semantic and accessible markup",
 			},
 			{
-				icon: <SiCss className="h-full w-full text-neutral-300" />,
+				icon: <SiCss aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "CSS3",
 				desc: "Responsive layouts and styling",
 			},
 			{
 				icon: (
-					<SiTailwindcss className="h-full w-full text-neutral-300" />
+					<SiTailwindcss aria-hidden="true" className="h-full w-full text-neutral-300" />
 				),
 				name: "Tailwind CSS",
 				desc: "Utility-first CSS framework",
 			},
 			{
 				icon: (
-					<SiBootstrap className="h-full w-full text-neutral-300" />
+					<SiBootstrap aria-hidden="true" className="h-full w-full text-neutral-300" />
 				),
 				name: "Bootstrap",
 				desc: "Component-based CSS framework",
@@ -84,30 +84,30 @@ const skills = [
 		items: [
 			{
 				icon: (
-					<SiNodedotjs className="h-full w-full text-neutral-300" />
+					<SiNodedotjs aria-hidden="true" className="h-full w-full text-neutral-300" />
 				),
 				name: "Node.js",
 				desc: "Server-side JavaScript runtime",
 			},
 			{
-				icon: <SiExpress className="h-full w-full text-neutral-300" />,
+				icon: <SiExpress aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "Express.js",
 				desc: "REST API framework for Node.js",
 			},
 			{
-				icon: <FaServer className="h-full w-full text-neutral-300" />,
+				icon: <FaServer aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "REST APIs",
 				desc: "Designing scalable API architectures",
 			},
 			{
 				icon: (
-					<FaShieldAlt className="h-full w-full text-neutral-300" />
+					<FaShieldAlt aria-hidden="true" className="h-full w-full text-neutral-300" />
 				),
 				name: "Clerk Auth",
 				desc: "Authentication and role-based access",
 			},
 			{
-				icon: <SiStripe className="h-full w-full text-neutral-300" />,
+				icon: <SiStripe aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "Stripe",
 				desc: "Payments and subscriptions",
 			},
@@ -118,30 +118,30 @@ const skills = [
 		group: "Agentic AI And AI Tools",
 		items: [
 			{
-				icon: <SiPython className="h-full w-full text-neutral-300" />,
+				icon: <SiPython aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "Python",
 				desc: "AI and backend scripting",
 			},
 			{
-				icon: <FaBrain className="h-full w-full text-neutral-300" />,
+				icon: <FaBrain aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "Machine Learning",
 				desc: "Core ML concepts and workflows",
 			},
 			{
-				icon: <BsOpenai  className="h-full w-full text-neutral-300" />,
+				icon: <BsOpenai aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "OpenAI API",
 				desc: "AI-powered features and automation",
 			},
 			{
 				icon: (
-					<SiLangchaincorporate  className="h-full w-full text-neutral-300" />
+					<SiLangchaincorporate aria-hidden="true"  className="h-full w-full text-neutral-300" />
 				),
 				name: "LangChain",
 				desc: "Building agentic AI workflows",
 			},
 			{
 				icon: (
-					<SiLanggraph className="h-full w-full text-neutral-300" />
+					<SiLanggraph aria-hidden="true" className="h-full w-full text-neutral-300" />
 				),
 				name: "LangGraph",
 				desc: "Multi-agent orchestration and control",
@@ -153,19 +153,19 @@ const skills = [
 		group: "Databases",
 		items: [
 			{
-				icon: <SiMongodb className="h-full w-full text-neutral-300" />,
+				icon: <SiMongodb aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "MongoDB",
 				desc: "NoSQL document database",
 			},
 			{
 				icon: (
-					<SiPostgresql className="h-full w-full text-neutral-300" />
+					<SiPostgresql aria-hidden="true" className="h-full w-full text-neutral-300" />
 				),
 				name: "PostgreSQL",
 				desc: "Relational SQL database",
 			},
 			{
-				icon: <SiSupabase className="h-full w-full text-neutral-300" />,
+				icon: <SiSupabase aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "Supabase",
 				desc: "Backend-as-a-Service platform",
 			},
@@ -176,17 +176,17 @@ const skills = [
 		group: "Tools & Platforms",
 		items: [
 			{
-				icon: <SiGit className="h-full w-full text-neutral-300" />,
+				icon: <SiGit aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "Git",
 				desc: "Version control system",
 			},
 			{
-				icon: <SiGithub className="h-full w-full text-neutral-300" />,
+				icon: <SiGithub aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "GitHub",
 				desc: "Code hosting and collaboration",
 			},
 			{
-				icon: <SiSentry className="h-full w-full text-neutral-300" />,
+				icon: <SiSentry aria-hidden="true" className="h-full w-full text-neutral-300" />,
 				name: "Sentry",
 				desc: "Error tracking and monitoring",
 			},
@@ -200,6 +200,7 @@ const skills = [
 			icon: (
 				<BucketWithObjectsIcon
 					size={40}
+					aria-hidden="true"
 					className="h-full w-full"
 				/>
 			),
@@ -210,6 +211,7 @@ const skills = [
 			icon: (
 				<LambdaFunctionIcon
 					size={40}
+					aria-hidden="true"
 					className="h-full w-full"
 				/>
 			),
@@ -218,14 +220,14 @@ const skills = [
 		},
 		{
 			icon: (
-				<SiDocker className="h-full w-full text-neutral-300" />
+				<SiDocker aria-hidden="true" className="h-full w-full text-neutral-300" />
 			),
 			name: "Docker",
 			desc: "Containerization and deployment",
 		},
 		{
 			icon: (
-				<FaCogs className="h-full w-full text-neutral-300" />
+				<FaCogs aria-hidden="true" className="h-full w-full text-neutral-300" />
 			),
 			name: "CI/CD",
 			desc: "Continuous integration and deployment",

@@ -133,9 +133,10 @@ export default function SignupFormDemo() {
 									)}
 								</LabelInputContainer>
 								<LabelInputContainer className="mb-4">
-									<Label>Message</Label>
+									<Label htmlFor="message">Message</Label>
 									<div className="textarea-wrapper">
 										<textarea
+											id="message"
 											{...register("message")}
 											className="glow-textarea"
 										/>
@@ -171,7 +172,7 @@ export default function SignupFormDemo() {
 											window.open(l.link, "_blank")
 										}
 									>
-										<l.icon className="h-4 w-4 text-neutral-300" />
+										<l.icon aria-hidden="true" className="h-4 w-4 text-neutral-300" />
 										<span className="text-sm text-neutral-300 capitalize">
 											{l.icon === IconBrandGithub
 												? "GitHub"

@@ -25,7 +25,7 @@ const HomeSection = () => {
 				</h2>
 
 				<p className="text-lg text-neutral-400 leading-relaxed max-w-lg">
-					Hey, I'm{" "}
+					Hey, I&apos;m{" "}
 					<span className="text-white font-semibold">
 						Arun Kumar Durgollu
 					</span>

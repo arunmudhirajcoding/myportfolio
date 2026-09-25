@@ -46,7 +46,7 @@ const profileSchema = {
             "Node.js",
             "Artificial Intelligence",
         ],
-		
+
         sameAs: [
             "https://github.com/arunmudhirajcoding",
             "https://www.linkedin.com/in/arun-kumar-durgollu/",
@@ -69,6 +69,7 @@ export default function Home() {
 				<div className="sticky top-0 z-50">
 					<NavbarDemo />
 				</div>
+				<main>
 				{/* home section */}
 				<section id="Home">
 					<HomeSection />
@@ -103,6 +104,9 @@ export default function Home() {
 				<section id="contact">
 					<ContactSection />
 				</section>	
+				
+				</main>
+				
 				{/* footer */}
 				<Footer />
 			</div>
